@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <section class="apresentacao">
+      <canvas id="chuva"></canvas>
+      <nav class="nav">
+        <a class="nav-link" href="#sobre">Sobre</a>
+        <a class="nav-link" href="#formacao">Formação</a>
+        <a class="nav-link" href="#projetos">Projetos</a>
+        <a class="nav-link" href="#contato">Contato</a>
+      </nav>
+      <h4>Olá, eu sou</h4>
+      <p id="nome"><%= dadosPessoais.nome %></p>
+      <h3><%= dadosPessoais.descricao %></h3>
+    </section>
+  </header>
+  <main>
+      <section id="sobre">
+        <div class="sobre-container">
+        <img src="foto.jpg" alt="foto" class="foto-perfil">
+        <div class="sobre-texto">
+          <p><%= sobre.apresentacao %></p>
+        </div>
+      </div>
+      </section>
+      <section>
+        <h2 class="titulo">Soft Skills</h2>
+        <div class="container">
+          <% softSkills.forEach(skill => { %>
+            <div class="card">
+              <p><%= skill.habilidade %></p>
+            </div>
+          <% }) %>
+        </div>
+      </section>
+        <section>
+        <h2 class="titulo">Hard Skills</h2>
+        <div class="container">
+          <% hardSkills.forEach(hard => { %>
+            <div class="card">
+              <p><strong><%= hard.nomeHabilidade %></p></strong><br><p><%= hard.habilidade %></p>
+            </div>
+          <% }) %>
+        </div>
+      </section>
+     <section id="formacao">
+      <h2 class="titulo">Cursos e Certificações</h2>
+      <div class="container">
+        <% formacoes.forEach(f => { %>
+          <div class="card">
+            <strong><%= f.curso %></strong><br>
+            <%= f.instituicao %><br>
+            (<%= f.ano %>)
+          </div>
+        <% }) %>
+      </div>
+    </section>
+     <section id="projetos">
+        <h2 class="titulo">Projetos</h2>
+        <div class="projeto-container">
+          <% projetos.forEach(p => { %>
+        <div class="projeto-card">
+          <strong><%= p.titulo %></strong><br>
+          <p><%= p.descricao %></p>
+          <% if (p.tecnologias) { %>
+            <p class="tec-label"><strong>Tecnologias:</strong></p>
+            <p class="tec-nomes"><%= p.tecnologias %></p>
+              <% } %>
+          </div>
+        <% }) %>
+      </div>
+    </section>
+    <section id="contato">
+      <div class="contato-container">
+        <% if (contato.email) { %>
+          <a href="mailto:<%= contato.email %>" class="contato-link" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        <% } %>
+       <% if (contato.github) { %>
+      <a href="<%= contato.github %>" class="contato-link" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    <% } %>
+    <% if (contato.linkedin) { %>
+      <a href="<%= contato.linkedin %>" class="contato-link" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    <% } %>
+  </div>
+</section>
+
+  </main> 
+  <script src="styles.js"></script>
+</body>
+</html>

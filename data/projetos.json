@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Sistema de Gerenciamento de Cursos",
+    "descricao": "Projeto individual para desenvolver um sistema completo de gerenciamento de cursos. Além das operações básicas de cadastro (CRUD), o sistema é capaz de exportar dados para arquivos de texto (.txt), facilitando a portabilidade e o compartilhamento das informações",
+    "tecnologias": "Java, MySQL, Flatlaf"
+  },
+  {
+    "id": 2,
+    "titulo": "IDE (Integrated Development Environment)",
+    "descricao": " Projeto em grupo para criar uma IDE completa. Colaborei na interface gráfica com JavaFX e na integração de uma IA, utilizada para auxiliar na explicação de códigos e para otimizar o aprendizado",
+    "tecnologias": " Java, JavaFX, MySQL e  IA (como o Ollama)"
+  },
+  {
+    "id": 3,
+    "titulo": "Site sobre a Metodologia Scrum",
+    "descricao": " Projeto desenvolvido em grupo com o objetivo de explicar os conceitos e a aplicação da metodologia Scrum. Colaborei no desenvolvimento de funcionalidades e na interface do site",
+    "tecnologias": " HTML, CSS e JavaScript"
+  },
+  {
+    "id": 4,
+    "titulo": " Sistema de Gestão de Aeronaves",
+    "descricao": " Projeto desenvolvido individualmente com o objetivo de criar um sistema de gerenciamento de produção de aeronavescom persistência local em arquivo JSON.Permite o cadastro, gerenciamento e relatório de aeronaves, peças, etapas de produção, testes e funcionários",
+    "tecnologias": "TypeScript"
+  }
+]

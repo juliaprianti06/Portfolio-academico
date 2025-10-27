@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "curso": "Análise e Desenvolvimento de Sistemas",
+    "instituicao": "FATEC",
+    "ano": "2024-2027"
+  },
+  {
+    "id": 2,
+    "curso": "Linux Essentials",
+    "instituicao": " Cisco Networking Academy ",
+    "ano": "2024"
+  },
+  {
+    "id": 3,
+    "curso": "Fundamentos de Hardware",
+    "instituicao": "Cisco Networking Academy",
+    "ano": "2024"
+  },
+  {
+    "id": 4,
+    "curso": "Test of English for International Communication",
+    "instituicao": "TOEIC",
+    "ano": "2025"
+  }
+]
